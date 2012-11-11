@@ -1,0 +1,43 @@
+<head>
+  <title>Meteor Rendering Tests</title>
+</head>
+
+<body>
+  {{> renderTests}}
+</body>
+
+<template name="renderTests">
+  <div id='others'>
+	  renderOtherTemplate() : 
+	  <br/>
+
+	  {{renderOtherTemplate}}
+	  <br/><br/>
+	  
+	  deferOtherTemplate() : 
+	  <br/>
+	  {{deferOtherTemplate}}
+	  <br/><br/>
+	  
+	  returnOtherTemplate() :
+	  <br/>
+	  {{returnOtherTemplate}}
+	  <br/><br/>
+	  
+	  renderHTML() :
+	  <br/>
+	  {{renderHTML}}
+	 </div>
+</template>
+
+<template name="other1">
+	<p>Other1</p>
+</template>
+
+<template name="other2">
+	<p>Other2</p>
+</template>
+
+<template name="other3">
+	<p>Other3</p>
+</template>
